@@ -1,0 +1,263 @@
+:root {
+  --color-forest: #283618;
+  --color-gold: #d4a373;
+  --color-beige: #fefae0;
+  --color-paper: #f5f1e8;
+  --color-brown: #3d2c1e;
+  --color-text: #5c5c5c;
+
+  --container-width: 1200px;
+
+  --transition: all 0.3s ease;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+
+  background: var(--color-beige);
+
+  color: var(--color-text);
+
+  overflow-x: hidden;
+}
+
+/* area navbar */
+.navbar-set {
+  background: rgba(40, 54, 24, 0.78);
+
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.08),
+    0 1px 0 rgba(255, 255, 255, 0.03) inset;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    border 0.3s ease;
+}
+
+.navbar-set__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 40px;
+}
+
+.navbar-set__logo {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-size: 1.7rem;
+  font-weight: 700;
+
+  line-height: 1;
+
+  color: var(--color-beige);
+  text-decoration: none;
+
+  letter-spacing: 1px;
+
+  font-family: "Playfair Display", serif;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.navbar-set__logo:hover {
+  color: #d4a373;
+  transform: translateY(-1px);
+}
+
+.navbar-set__list {
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
+
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-set__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  position: relative;
+  line-height: 1;
+  color: var(--color-beige);
+
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  letter-spacing: 0.4px;
+
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.navbar-set__link::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0%;
+  height: 1px;
+
+  background: #d4a373;
+
+  transition: width 0.3s ease;
+}
+
+.navbar-set__link:hover {
+  color: #d4a373;
+}
+
+.navbar-set__link:hover::after {
+  width: 100%;
+}
+
+.navbar-set__link.active {
+  color: #d4a373;
+}
+
+/* area hero */
+.hero {
+  padding: 100px 0;
+
+  background: var(--color-paper);
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  width: 100%;
+  max-width: var(--container-width);
+
+  margin: 0 auto;
+
+  padding: 0 40px;
+}
+
+.hero__content {
+  max-width: 600px;
+  flex: 1;
+}
+
+.hero__tagline {
+  margin-bottom: 16px;
+
+  color: var(--color-gold);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.hero__title {
+  margin-bottom: 24px;
+
+  font-size: 4rem;
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  color: var(--color-forest);
+  font-family: "Playfair Display", serif;
+}
+
+.hero__description {
+  max-width: 550px;
+  margin-bottom: 40px;
+
+  color: var(--color-text);
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  line-height: 1.8;
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.hero__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+
+  padding: 14px 28px;
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  line-height: 1;
+
+  color: var(--color-brown);
+  text-decoration: none;
+
+  letter-spacing: 1px;
+
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    border 0.3s ease;
+}
+
+.hero__button--primary {
+  background: var(--color-forest);
+  color: var(--color-beige);
+}
+.hero__button--primary:hover {
+  background: var(--color-brown);
+
+  transform: translateY(-2px);
+}
+
+.hero__button--secondary {
+  background: transparent;
+  color: var(--color-forest);
+  border: 2px solid var(--color-forest);
+}
+
+.hero__button--secondary:hover {
+  background: rgba(40, 54, 24, 0.05);
+
+  transform: translateY(-2px);
+}

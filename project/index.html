@@ -1,33 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tangtangan</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/css-reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Literasa Book</title>
+  </head>
+  <body>
     <!-- navbar -->
-    <nav>
-        <div class="logo">
-            <h2>Tangtangan</h2>
+    <header class="navbar-set">
+      <div class="navbar-set__container">
+        <a href="#" class="navbar-set__logo">Literasa Book</a>
+        <nav class="navbar-set__nav">
+          <ul class="navbar-set__list">
+            <li><a href="#home" class="navbar-set__link">Home</a></li>
+            <li><a href="#features" class="navbar-set__link">Features</a></li>
+            <li><a href="#about" class="navbar-set__link">About</a></li>
+            <li><a href="#contact" class="navbar-set__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <p class="hero__tagline">Discover the World of Literature</p>
+            <h1 class="hero__title">Books That Inspire Every Chapter of Life</h1>
+            <p class="hero__description">
+              Explore curated collections of classic literature, philosophy,
+              self-development, and modern stories.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#features" class="hero__button hero__button--primary"
+                >Get Started</a
+              >
+              <a href="#about" class="hero__button hero__button--secondary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+
+          <div class="hero__image">
+            <img src="img/hero.jpg" alt="Hero Image" />
+          </div>
         </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+      </section>
 
-    <!-- Hero Section -->
+      <!-- Features Section -->
+      <section id="features">
+        <h2>ini fitur</h2>
+      </section>
 
-    <!-- Features Section -->
+      <!-- About -->
+      <section id="about">
+        <h2>ini about</h2>
+      </section>
 
-    <!-- About -->
-
-    <!-- CTA Section -->
+      <!-- CTA Section -->
+      <section id="cta">
+        <h2>Join Tangtangan Today!</h2>
+        <p>Sign up now and start collaborating on exciting projects.</p>
+        <a href="#contact" class="hero__button hero__button--primary"
+          >Get Started</a
+        >
+      </section>
+    </main>
 
     <!-- Footer -->
-
-</body>
+    <footer>
+      <p>&copy; 2024 Tangtangan. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
