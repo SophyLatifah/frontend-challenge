@@ -9,21 +9,36 @@
     />
     <link rel="stylesheet" href="css/css-reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Literasa Book</title>
+    <title>Literasa</title>
   </head>
   <body>
     <!-- navbar -->
     <header class="navbar-set">
       <div class="navbar-set__container">
-        <a href="#" class="navbar-set__logo">Literasa Book</a>
+        <a href="#" class="navbar-set__logo">Literasa</a>
         <nav class="navbar-set__nav">
           <ul class="navbar-set__list">
             <li><a href="#home" class="navbar-set__link">Home</a></li>
             <li><a href="#features" class="navbar-set__link">Features</a></li>
             <li><a href="#about" class="navbar-set__link">About</a></li>
-            <li><a href="#contact" class="navbar-set__link">Contact</a></li>
           </ul>
         </nav>
+
+        <div class="navbar-set__actions">
+          <a
+            href="signin.html"
+            class="navbar-set__button navbar-set__button--secondary"
+          >
+            Sign In
+          </a>
+
+          <a
+            href="signup.html"
+            class="navbar-set__button navbar-set__button--primary"
+          >
+            Sign Up
+          </a>
+        </div>
       </div>
     </header>
 
@@ -32,16 +47,18 @@
       <section id="home" class="hero">
         <div class="hero__container">
           <div class="hero__content">
-            <p class="hero__tagline">Discover the World of Literature</p>
-            <h1 class="hero__title">Books That Inspire Every Chapter of Life</h1>
+            <p class="hero__tagline">A community for passionate readers</p>
+            <h1 class="hero__title">
+              Discover Books and Share Your Reading Journey
+            </h1>
             <p class="hero__description">
-              Explore curated collections of classic literature, philosophy,
-              self-development, and modern stories.
+              Explore meaningful books, read honest reviews, and connect with
+              readers who share your passion for literature.
             </p>
 
             <div class="hero__actions">
               <a href="#features" class="hero__button hero__button--primary"
-                >Get Started</a
+                >Explore Features</a
               >
               <a href="#about" class="hero__button hero__button--secondary"
                 >Learn More</a
@@ -56,28 +73,119 @@
       </section>
 
       <!-- Features Section -->
-      <section id="features">
-        <h2>ini fitur</h2>
+      <section id="features" class="features">
+        <div class="features__container">
+          <div class="features__header">
+            <p class="features__tagline">Why Choose Literasa</p>
+            <h2 class="features__title">A Better Way to Discover Books</h2>
+          </div>
+
+          <div class="features__grid">
+            <!-- card 1 -->
+            <article class="features__card">
+              <h3 class="features__card-title">Curated Collection</h3>
+
+              <p class="features__card-description">
+                Explore thoughtfully selected books ranging from timeless
+                classics to modern literature.
+              </p>
+            </article>
+
+            <!-- card 2 -->
+            <article class="features__card">
+              <h3 class="features__card-title">Community Reviews</h3>
+
+              <p class="features__card-description">
+                Read honest insights and recommendations shared by passionate
+                readers.
+              </p>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="features__card">
+              <h3 class="features__card-title">Personalized Discovery</h3>
+
+              <p class="features__card-description">
+                Find meaningful books tailored to your favorite genres and
+                reading interests.
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
 
       <!-- About -->
-      <section id="about">
-        <h2>ini about</h2>
+      <section id="about" class="about">
+        <div class="about__container">
+          <div class="about__image"></div>
+          <div class="about__content">
+            <p class="about__tagline">Our Story</p>
+            <h2 class="about__title">
+              A Place Where Readers Connect Through Stories
+            </h2>
+            <p class="about__description">
+              Literasa was created for readers who believe books are more than
+              just words on a page.
+            </p>
+
+            <p class="about__description">
+              Discover meaningful literature, share honest reviews, and connect
+              with a community that values thoughtful reading experiences.
+            </p>
+
+            <a href="signin.html" class="about__button"> Join The Community </a>
+          </div>
+        </div>
       </section>
 
       <!-- CTA Section -->
-      <section id="cta">
-        <h2>Join Tangtangan Today!</h2>
-        <p>Sign up now and start collaborating on exciting projects.</p>
-        <a href="#contact" class="hero__button hero__button--primary"
-          >Get Started</a
-        >
+      <section id="cta" class="cta">
+        <div class="cta__container">
+          <p class="cta__tagline">Join The Literasa Community</p>
+          <h2 class="cta__title">Start Your Next Reading Journey Today</h2>
+          <p class="cta__description">
+            Discover meaningful books, share your thoughts, and connect with
+            readers from around the world.
+          </p>
+
+          <div class="holographic-container">
+            <div class="holographic-card">
+              <a href="books.html" class="cta__button"> Join Now</a>
+            </div>
+          </div>
+          
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Tangtangan. All rights reserved.</p>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo"> Literasa Book </a>
+
+          <p class="footer__description">
+            A modern community platform for discovering, reviewing, and sharing
+            meaningful books.
+          </p>
+        </div>
+
+        <nav class="footer__nav">
+          <a href="#home" class="footer__link"> Home </a>
+
+          <a href="#features" class="footer__link"> Features </a>
+
+          <a href="#about" class="footer__link"> About </a>
+
+          <a href="#cta" class="footer__link"> Community </a>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2026 Literasa Book. All rights reserved.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
