@@ -432,7 +432,7 @@ body {
   padding: 0 40px;
 }
 
-/* .about__image{
+.about__image{
   flex: 1;
 }
 
@@ -445,7 +445,7 @@ body {
 
   box-shadow:
     0 20px 40px rgba(0,0,0,0.12);
-} */
+}
 
 .about__content {
   flex: 1;
