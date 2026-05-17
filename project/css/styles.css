@@ -322,6 +322,67 @@ body {
   transform: translateY(-2px);
 }
 
+/* Container Utama untuk Grid Gambar */
+.hero-set__grid {
+  display: flex;
+  gap: 20px;
+  height: 450px;       /* Tentukan tinggi maksimal area grid buku */
+  overflow: hidden;    /* Menyembunyikan buku yang meluap ke luar kotak */
+  position: relative;
+}
+
+/* Base Style untuk Setiap Kolom */
+.hero-set__column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Mengatur Ukuran dan Kelengkungan Sampul Buku */
+.hero-set__book {
+  width: 140px;         /* Lebar ideal untuk sampul buku vertikal */
+  height: 210px;        /* Rasio standar buku (2:3) */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* --- LOGIKA ANIMASI BERJALAN --- */
+
+/* Kolom 1: Bergerak ke Atas */
+.hero-set__column--up {
+  animation: scrollUp 15s linear infinite;
+}
+
+/* Kolom 2: Bergerak ke Bawah */
+.hero-set__column--down {
+  animation: scrollDown 15s linear infinite;
+}
+
+/* Efek Hover: Berhenti berjalan saat kursor mouse didekatkan */
+.hero-set__grid:hover .hero-set__column {
+  animation-play-state: paused;
+}
+
+/* Otak dari gerakan animasinya */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%); /* Menarik kolom ke atas setengah dari total tingginya */
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* area features  */
 .features {
   padding: 100px 0;
